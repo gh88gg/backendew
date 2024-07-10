@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>تسجيل الدخول</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .login-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .login-form {
+            display: none;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-form input[type="text"], 
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+        }
+        .login-form input[type="submit"] {
+            padding: 5px 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .login-icon {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="log in.png" alt="تسجيل الدخول" class="login-icon" width="30" height="30" onclick="toggleLoginForm()">
+        <div class="login-form" id="loginForm">
+            <form action="login.html" method="post">
+                <label for="username">اسم المستخدم:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">كلمة المرور:</label>
+                <input type="password" id="password" name="password" required>
+                <input type="submit" value="تسجيل الدخول">
+            </form>
+        </div>
+    </div>
+    <script>
+        function toggleLoginForm() {
+            var loginForm = document.getElementById('loginForm');
+            if (loginForm.style.display === 'none' || loginForm.style.display === '') {
+                loginForm.style.display = 'block';
+            } else {
+                loginForm.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

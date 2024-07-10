@@ -1,0 +1,35 @@
+/* تنسيق قسم الفئات */
+#categories {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px;
+}
+
+#categories h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#categories ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#categories li {
+    margin: 10px 0;
+}
+
+#categories li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+}
+
+#categories li a:hover {
+    text-decoration: underline;
+}
