@@ -1,82 +1,259 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>متجر اكسسوار</title>
-    <link  rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" 
+rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+
 </head>
 <body>
-    <!-- الصفحة الرئيسية -->
-    <header>
+<div class="header">
+   <div class="container">
+      <div class="navbar">
+        <div class="logo">
+            <img src="imgs/paperanimator-image (2).png" width="200px">
+        </div>
         <nav>
-            <div class="logo">Accessories store</div>
-            <div class="logo">
-
-                <img src="LOGO.png" alt="شعار الموقع" style="height: 140px;">
-            </div>
-            <br>
-            <section>
-                   <ul id="id">
-                          <li id="l"><a href="رئيسي.html">الرئيسية</a></li>
-                          <li id="i"><a href="الفئات.html">الفئات</a></li>
-                          <li id="s"><a href="حول.html">حول</a></li>              
-                          <li id="t"><a href="call.html">تواصل معنا</a></li>
-                    </ul>
-            </section>
-           
-            <a  href="test.html">تسجيل الدخول</a>
+              <ul id="MenuItems">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="الفئات.html">الفئات</a></li>
+                <li><a href="حول.html">حول</a></li>
+                <li><a href="call.html"> تواصل معنا</a></li>
+                <li><a href="accont.html"> تسجيل الدخول</a></li>
+              </ul>
         </nav>
-    </header>
-    
-    <section id="hero">
-        <h1>اكتشف الأناقة مع أفضل الإكسسوارات</h1>
-    </section>
-    <h3>
-        [Accessories store]
-        <br>
-        هو متجر إلكتروني متخصص في تقديم 
-        تشكيلة واسعة من الإكسسوارات العصرية والأنيقة
-        . نقدم لكم تصاميم فريدة وجودة عالية تضيف لمسة خاصة إلى إطلالتكم اليومية
-        . اكتشفوا مجموعتنا المتنوعة من الحلي، الأساور، الساعات، والحقائب بأسعار
-         تنافسية وخدمة عملاء ممتازة. تسوقوا الآن واستمتعوا بتجربة تسوق مريحة وآمنة.</h3>
-    <section id="featured-products">
-        <h2>المنتجات المميزة</h2>
-        <div class="product">
-            <h3>حقائب</h3>
-           
-            <img  src="حقائب.png" alt="منتج 1">
-            
-        </div>
-        <div class="product">
-            <h3 >ساعات</h3>
-            <img src="ساعات.png" alt="منتج 2">
-           
-        </div>
-        <div class="product">
-            <h3>نضارات</h3>
-            <img src="نضارات.png" alt="منتج 3">
-            
-        </div>
-    </section>
-    
-    <section>
-        <h2>الفئات</h2>
-        <ul>
-            <li><a href="watch.html">الساعات </a></li>
-            <br>
-            <br>
-            <li><a  href="نضارات.html">النظارات</a></li>
-            <br>
-            <br>
-            <li><a href="bag.html">الحقائب</a></li>
-            <br>
-            <br>
-            <li><a href="jeans.html">جينز</a></li>
-        </ul>
-    </section>
-    
+        <img src="imgs/shopping-cart.png" width="30px" height="30px">
+       </div>
+       <div class="row">
+             <div class="col_2">
+                <h1>Hekaya store!</h1>
+                <p>متجر حكاية هو وجهتك المثالية للاكسسوارات العصرية والأنيقة
+                    <br>نقدم لكم تصاميم فريدة وجودة عالية تضيف لمسة خاصة إلى إطلالتكم اليومية
+                     <br>اكتشفوا مجموعتنا المتنوعة وتمتعو بتجربة تسوق لا مثيل لها</p>
+                     <a href="" class="btn">استكشف الآن &#8594;</a>
+             </div>
+             <div class="col_2">
+               <img src="imgs/pc.jpg ">
+             </div>
+       </div>
+   </div>
+</div>
 
+<!-- الفئات المميزة -->
+<div class="categories">
+    <div class="smal_container">
+        <div class="row">
+            <div class="col_3">
+                <img src="imgs/حقائب.png"  width="300px">
+            </div>
+            <div class="col_3">
+                <img src="imgs/نضارات.png" width="300px" height="300px">
+            </div>
+            <div class="col_3">
+                <img src="imgs/ساعات.png"  width="300px">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- منتجات المميزة -->
+<div class="smal-container">
+    <h2 class="title">منتجات مميزة</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="imgs/ب.png">
+            <h4>جينز اسود واسع</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
+        </div>
+        <div class="col-4">
+            <img src="imgs/ن5.png">
+            <h4>نضارة سوداء</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
+        </div>
+        <div class="col-4">
+            <img src="imgs/س ز-image (3).png" >
+            <h4> ساعة كلاسك</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
+        </div>
+        <div class="col-4">
+            <img src="imgs/ح س-image (4).png">
+            <h4>حقيبة كلاسك</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
+        </div>
+    </div>
+    <h2 class="title">احدث المنتجات</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="imgs/ح6.png">
+            <h4>حقيبة بلون مميز</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
+        </div>
+        <div class="col-4">
+            <img src="imgs/ح7.png">
+            <h4>حقيبة رجالي</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
+        </div>
+        <div class="col-4">
+            <img src="imgs/ن2.png" >
+            <h4> نضارة بلون مميز</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
+        </div>
+        <div class="col-4">
+            <img src="imgs/س رسpng.png">
+            <h4>ساعة رجالي </h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+                <label for="star1">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
+        </div>
+    </div>
+</div>
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col_2">
+                <img src="imgs/image (6).png" class="offer-img">
+            </div>
+            <div class="col_2">
+                <P>متوفر حصريا في حكاية</P>
+                <h1>M36 plus max</h1>
+                <small>(ساعة M36 PLUSA) 
+
+                    سعة البطارية  200  ملي امبير تعمل حتى يوم كامل 
+                    
+                    مقاومة الماء IP67 (الرطوبة ورشات المطر)
+                    
+                    البلوتوث 5.0+ Android /
+                    10.0 IOS</small>
+                    <br>
+                    <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+<!-- brands -->
+      <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="imgs/goggle.png">
+                </div>
+                <div class="col-5">
+                    <img src="imgs/ph.png">
+                </div>
+                <div class="col-5">
+                    <img src="imgs/oppo.png">
+                </div>
+                <div class="col-5">
+                    <img src="imgs/pay.png">
+                </div>
+                <div class="col-5">
+                    <img src="imgs/APP.png">
+                </div>
+            </div>
+        </div>
+      </div>
+<!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our app</h3>
+                    <p>Download  app for android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="imgs/apgo.png">
+                        <img src="imgs/gopy.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="imgs/paperanimator-image (2).png">
+                    <p>Our goal is to make fun and benefits accessible to everyone in a sustainable manner</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>use full Links</h3>
+                   <ul>
+                    <li>coupons</li>
+                    <li>blog post</li>
+                    <li>return policy</li>
+                    <li>join affiliate</li>
+                   </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>follow us</h3>
+                   <ul>
+                    <li>facebook</li>
+                    <li>twitter</li>
+                    <li>instagram</li>
+                    <li>youTube</li>
+                   </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
 
 </body>
 </html>
