@@ -6,196 +6,193 @@
     <title>متجر اكسسوار</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" 
-rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" 
+    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
 </head>
 <body>
-<div class="header">
-   <div class="container">
-      <div class="navbar">
-        <div class="logo">
-            <img src="imgs/paperanimator-image (2).png" width="200px">
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="imgs/paperanimator-image (2).png" width="200px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="الفئات.html">الفئات</a></li>
+                        <li><a href="حول.html">حول</a></li>
+                        <li><a href="call.html">تواصل معنا</a></li>
+                        <li><a href="accont.html">تسجيل الدخول</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="imgs/shopping-cart.png" width="30px" height="30px"></a>
+            </div>
+            <div class="row">
+                <div class="col_2">
+                    <h1>Hekaya store!</h1>
+                    <p>متجر حكاية هو وجهتك المثالية للاكسسوارات العصرية والأنيقة
+                        <br>نقدم لكم تصاميم فريدة وجودة عالية تضيف لمسة خاصة إلى إطلالتكم اليومية
+                        <br>اكتشفوا مجموعتنا المتنوعة وتمتعوا بتجربة تسوق لا مثيل لها</p>
+                    <a href="categories.html" class="btn">استكشف الآن &#8594;</a>
+                </div>
+                <div class="col_2">
+                    <img src="imgs/pc.jpg">
+                </div>
+            </div>
         </div>
-        <nav>
-              <ul id="MenuItems">
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="الفئات.html">الفئات</a></li>
-                <li><a href="حول.html">حول</a></li>
-                <li><a href="call.html"> تواصل معنا</a></li>
-                <li><a href="accont.html"> تسجيل الدخول</a></li>
-              </ul>
-        </nav>
-        <img src="imgs/shopping-cart.png" width="30px" height="30px">
-       </div>
-       <div class="row">
-             <div class="col_2">
-                <h1>Hekaya store!</h1>
-                <p>متجر حكاية هو وجهتك المثالية للاكسسوارات العصرية والأنيقة
-                    <br>نقدم لكم تصاميم فريدة وجودة عالية تضيف لمسة خاصة إلى إطلالتكم اليومية
-                     <br>اكتشفوا مجموعتنا المتنوعة وتمتعو بتجربة تسوق لا مثيل لها</p>
-                     <a href="" class="btn">استكشف الآن &#8594;</a>
-             </div>
-             <div class="col_2">
-               <img src="imgs/pc.jpg ">
-             </div>
-       </div>
-   </div>
-</div>
+    </div>
 
-<!-- الفئات المميزة -->
-<div class="categories">
-    <div class="smal_container">
-        <div class="row">
-            <div class="col_3">
-                <img src="imgs/حقائب.png"  width="300px">
-            </div>
-            <div class="col_3">
-                <img src="imgs/نضارات.png" width="300px" height="300px">
-            </div>
-            <div class="col_3">
-                <img src="imgs/ساعات.png"  width="300px">
+    <!-- الفئات المميزة -->
+    <div class="categories">
+        <div class="small_container">
+            <div class="row">
+                <div class="col_3">
+                    <a href="categories.html#bags"><img src="imgs/حقائب.png" width="300px"></a>
+                </div>
+                <div class="col_3">
+                    <a href="categories.html#glasses"><img src="imgs/نضارات.png" width="300px" height="300px"></a>
+                </div>
+                <div class="col_3">
+                    <a href="categories.html#watches"><img src="imgs/ساعات.png" width="300px"></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- منتجات المميزة -->
-<div class="smal-container">
-    <h2 class="title">منتجات مميزة</h2>
-    <div class="row">
-        <div class="col-4">
-            <img src="imgs/ب.png">
-            <h4>جينز اسود واسع</h4>
-            <div class="rating">
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-            </div>
-            <p>35000</p>
-            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-        </div>
-        <div class="col-4">
-            <img src="imgs/ن5.png">
-            <h4>نضارة سوداء</h4>
-            <div class="rating">
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-            </div>
-            <p>35000</p>
-            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-        </div>
-        <div class="col-4">
-            <img src="imgs/س ز-image (3).png" >
-            <h4> ساعة كلاسك</h4>
-            <div class="rating">
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-            </div>
-            <p>35000</p>
-            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-        </div>
-        <div class="col-4">
-            <img src="imgs/ح س-image (4).png">
-            <h4>حقيبة كلاسك</h4>
-            <div class="rating">
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-            </div>
-            <p>35000</p>
-            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-        </div>
-    </div>
-    <h2 class="title">احدث المنتجات</h2>
-    <div class="row">
-        <div class="col-4">
-            <img src="imgs/ح6.png">
-            <h4>حقيبة بلون مميز</h4>
-            <div class="rating">
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-            </div>
-            <p>35000</p>
-            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-        </div>
-        <div class="col-4">
-            <img src="imgs/ح7.png">
-            <h4>حقيبة رجالي</h4>
-            <div class="rating">
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-            </div>
-            <p>35000</p>
-            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-        </div>
-        <div class="col-4">
-            <img src="imgs/ن2.png" >
-            <h4> نضارة بلون مميز</h4>
-            <div class="rating">
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-            </div>
-            <p>35000</p>
-            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-        </div>
-        <div class="col-4">
-            <img src="imgs/س رسpng.png">
-            <h4>ساعة رجالي </h4>
-            <div class="rating">
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-            </div>
-            <p>35000</p>
-            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-        </div>
-    </div>
-</div>
-<div class="offer">
+
+    <!-- منتجات المميزة -->
     <div class="small-container">
+        <h2 class="title">منتجات مميزة</h2>
         <div class="row">
-            <div class="col_2">
-                <img src="imgs/image (6).png" class="offer-img">
+            <div class="col-4">
+                <img src="imgs/ب.png">
+                <h4>جينز اسود واسع</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
             </div>
-            <div class="col_2">
-                <P>متوفر حصريا في حكاية</P>
-                <h1>M36 plus max</h1>
-                <small>(ساعة M36 PLUSA) 
+            <div class="col-4">
+                <img src="imgs/ن5.png">
+                <h4>نضارة سوداء</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                    <label for="star5">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="نضارة سوداء" data-price="35000">إضافة إلى السلة</button>
+            </div>
+            <div class="col-4">
+                <img src="imgs/س ز-image (3).png">
+                <h4>ساعة كلاسك</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                    <label for="star5">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="ساعة كلاسك" data-price="35000">إضافة إلى السلة</button>
+            </div>
+            <div class="col-4">
+                <img src="imgs/ح س-image (4).png">
+                <h4>حقيبة كلاسك</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="حقيبة كلاسك" data-price="35000">إضافة إلى السلة</button>
+            </div>
+        </div>
 
-                    سعة البطارية  200  ملي امبير تعمل حتى يوم كامل 
-                    
-                    مقاومة الماء IP67 (الرطوبة ورشات المطر)
-                    
-                    البلوتوث 5.0+ Android /
-                    10.0 IOS</small>
-                    <br>
-                    <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-                    
+        <h2 class="title">احدث المنتجات</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="imgs/ح6.png">
+                <h4>حقيبة بلون مميز</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="حقيبة بلون مميز" data-price="35000">إضافة إلى السلة</button>
+            </div>
+            <div class="col-4">
+                <img src="imgs/ح7.png">
+                <h4>حقيبة رجالي</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                    <label for="star5">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="حقيبة رجالي" data-price="35000">إضافة إلى السلة</button>
+            </div>
+            <div class="col-4">
+                <img src="imgs/ن2.png">
+                <h4>نضارة بلون مميز</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                    <label for="star5">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="نضارة بلون مميز" data-price="35000">إضافة إلى السلة</button>
+            </div>
+            <div class="col-4">
+                <img src="imgs/س رسpng.png">
+                <h4>ساعة رجالي</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="ساعة رجالي" data-price="35000">إضافة إلى السلة</button>
             </div>
         </div>
     </div>
-</div>
-<!-- brands -->
-      <div class="brands">
+
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col_2">
+                    <img src="imgs/image (6).png" class="offer-img">
+                </div>
+                <div class="col_2">
+                    <p>متوفر حصريا في حكاية</p>
+                    <h1>M36 plus max</h1>
+                    <small>ساعة M36 PLUSA</small>
+                    <small>سعة البطارية 200 ملي امبير تعمل حتى يوم كامل</small>
+                    <small>مقاومة الماء IP67 (الرطوبة ورشات المطر)</small>
+                    <small>البلوتوث 5.0+ Android / 10.0 IOS</small>
+                    <button class="add-to-cart" data-name="M36 plus max" data-price="35000">إضافة إلى السلة</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- brands -->
+    <div class="brands">
         <div class="small-container">
             <div class="row">
                 <div class="col-5">
@@ -215,14 +212,15 @@ rel="stylesheet">
                 </div>
             </div>
         </div>
-      </div>
-<!-- footer -->
+    </div>
+
+    <!-- footer -->
     <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="footer-col-1">
                     <h3>Download our app</h3>
-                    <p>Download  app for android and ios mobile phone</p>
+                    <p>Download app for android and ios mobile phone</p>
                     <div class="app-logo">
                         <img src="imgs/apgo.png">
                         <img src="imgs/gopy.png">
@@ -234,26 +232,28 @@ rel="stylesheet">
                 </div>
                 <div class="footer-col-3">
                     <h3>use full Links</h3>
-                   <ul>
-                    <li>coupons</li>
-                    <li>blog post</li>
-                    <li>return policy</li>
-                    <li>join affiliate</li>
-                   </ul>
+                    <ul>
+                        <li>coupons</li>
+                        <li>blog post</li>
+                        <li>return policy</li>
+                        <li>join affiliate</li>
+                    </ul>
                 </div>
                 <div class="footer-col-4">
                     <h3>follow us</h3>
-                   <ul>
-                    <li>facebook</li>
-                    <li>twitter</li>
-                    <li>instagram</li>
-                    <li>youTube</li>
-                   </ul>
+                    <ul>
+                        <li>facebook</li>
+                        <li>twitter</li>
+                        <li>instagram</li>
+                        <li>youTube</li>
+                    </ul>
                 </div>
             </div>
             <hr>
         </div>
     </div>
 
+    <script src="test.js"></script>
+    <script src="cart.html"></script>
 </body>
 </html>

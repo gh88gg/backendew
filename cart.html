@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر اكسسوار</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="imgs/paperanimator-image (2).png" width="200px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="الفئات.html">الفئات</a></li>
+                    <li><a href="حول.html">حول</a></li>
+                    <li><a href="call.html">تواصل معنا</a></li>
+                    <li><a href="accont.html">تسجيل الدخول</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="imgs/shopping-cart.png" width="30px" height="30px"></a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2>سلة التسوق</h2>
+    <div id="cart-items">
+        <!-- هنا سيتم إدراج المنتجات من سلة التسوق -->
+    </div>
+    <button onclick="clearCart()">مسح السلة</button>
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download app for android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="imgs/apgo.png">
+                    <img src="imgs/gopy.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="imgs/paperanimator-image (2).png">
+                <p>Our goal is to make fun and benefits accessible to everyone in a sustainable manner</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>use full Links</h3>
+                <ul>
+                    <li>coupons</li>
+                    <li>blog post</li>
+                    <li>return policy</li>
+                    <li>join affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>follow us</h3>
+                <ul>
+                    <li>facebook</li>
+                    <li>twitter</li>
+                    <li>instagram</li>
+                    <li>youTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        displayCartItems();
+    });
+
+    function displayCartItems() {
+        const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+        const cartContainer = document.getElementById('cart-items');
+        cartContainer.innerHTML = '';
+
+        cartItems.forEach(item => {
+            const itemElement = document.createElement('div');
+            itemElement.innerHTML = `
+                <div>
+                    <strong>${item.name}</strong> - ${item.price} دينار
+                </div>
+            `;
+            cartContainer.appendChild(itemElement);
+        });
+    }
+
+    function clearCart() {
+        localStorage.removeItem('cart');
+        document.getElementById('cart-items').innerHTML = '<p>تم مسح السلة!</p>';
+    }
+</script>
+
+</body>
+</html>

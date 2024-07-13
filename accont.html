@@ -9,6 +9,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <style>
+        .form-container {
+            position: relative;
+            width: 100%;
+            max-width: 300px;
+            margin: auto;
+        }
+        .form-btn {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-btn span {
+            cursor: pointer;
+            padding: 10px 20px;
+            background: #f8f8f8;
+        }
+        #indicator {
+            width: 50%;
+            border: none;
+            height: 2px;
+            background: #ff523b;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: 0.5s;
+        }
+        form {
+            display: none;
+        }
+        form.active {
+            display: block;
+        }
+    </style>
 </head>
 <body>
 <div class="header">
@@ -20,17 +53,17 @@
         <nav>
               <ul id="MenuItems">
                 <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="الفئات.html">الفئات</a></li>
-                <li><a href="حول.html">حول</a></li>
-                <li><a href="call.html"> تواصل معنا</a></li>
-                <li><a href="accont.html"> تسجيل الدخول</a></li>
+                <li><a href="categories.html">الفئات</a></li>
+                <li><a href="about.html">حول</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
               </ul>
         </nav>
-        <img src="imgs/shopping-cart.png" width="30px" height="30px">
+        <a href="cart.html"><img src="imgs/shopping-cart.png" width="30px" height="30px"></a>
        </div>
     </div>
 </div>
-<!-- accont page -->
+<!-- صفحة الحساب -->
 <div class="account-page">
     <div class="container">
         <div class="row">
@@ -40,21 +73,21 @@
             <div class="col-2">
                 <div class="form-container">
                     <div class="form-btn">
-                        <span>login</span>
-                        <span>register</span>
+                        <span onclick="login()">تسجيل الدخول</span>
+                        <span onclick="register()">تسجيل جديد</span>
                         <hr id="indicator">
                     </div>
-                    <form id="loginForm">
-                        <input type="text" placeholder="username">
-                        <input type="password" placeholder="password">
-                        <button type="submit" class="btn">Login</button>
-                        <a href="">Forgot password</a>
+                    <form id="loginForm" class="active">
+                        <input type="text" placeholder="اسم المستخدم">
+                        <input type="password" placeholder="كلمة المرور">
+                        <button type="submit" class="btn">تسجيل الدخول</button>
+                        <a href="#">نسيت كلمة المرور؟</a>
                     </form>
                     <form id="regForm">
-                        <input type="text" placeholder="username">
-                        <input type="email" placeholder="email">
-                        <input type="password" placeholder="password">
-                        <button type="submit" class="btn">register</button>
+                        <input type="text" placeholder="اسم المستخدم">
+                        <input type="email" placeholder="البريد الإلكتروني">
+                        <input type="password" placeholder="كلمة المرور">
+                        <button type="submit" class="btn">تسجيل جديد</button>
                     </form>
                 </div>
             </div>
@@ -101,5 +134,22 @@
     </div>
 </div>
 
+<script>
+    var loginForm = document.getElementById("loginForm");
+    var regForm = document.getElementById("regForm");
+    var indicator = document.getElementById("indicator");
+
+    function login() {
+        loginForm.classList.add("active");
+        regForm.classList.remove("active");
+        indicator.style.transform = "translateX(0)";
+    }
+
+    function register() {
+        loginForm.classList.remove("active");
+        regForm.classList.add("active");
+        indicator.style.transform = "translateX(100%)";
+    }
+</script>
 </body>
 </html>

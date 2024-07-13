@@ -6,11 +6,34 @@
     <title>كل الفئات</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" 
-rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" 
+    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
 
+    <script>
+        function navigateToCategory() {
+            var selectElement = document.querySelector('select');
+            var selectedCategory = selectElement.value;
+            switch (selectedCategory) {
+                case 'حقائب':
+                    window.location.href = 'bags.html';
+                    break;
+                case 'نضارات':
+                    window.location.href = 'glasses.html';
+                    break;
+                case 'جينز':
+                    window.location.href = 'jeans.html';
+                    break;
+                case 'ساعات':
+                    window.location.href = 'watches.html';
+                    break;
+                default:
+                    window.location.href = 'all-products.html';
+                    break;
+            }
+        }
+    </script>
 </head>
 <body>
    <div class="container">
@@ -23,8 +46,8 @@ rel="stylesheet">
                 <li><a href="index.html">الرئيسية</a></li>
                 <li><a href="الفئات.html">الفئات</a></li>
                 <li><a href="حول.html">حول</a></li>
-                <li><a href="call.html"> تواصل معنا</a></li>
-                <li><a href="accont.html"> تسجيل الدخول</a></li>
+                <li><a href="call.html">تواصل معنا</a></li>
+                <li><a href="accont.html">تسجيل الدخول</a></li>
               </ul>
         </nav>
         <img src="imgs/shopping-cart.png" width="30px" height="30px">
@@ -32,368 +55,62 @@ rel="stylesheet">
    </div>
 
 <div class="smal-container">
-        
-         <div class=" row-2">
-            <h2>كل المنتجات</h2>
-            <select>
-                <option>حقائب</option>
-                <option>نضارات</option>
-                <option>جينز</option>
-                <option>ساعات</option>
-            </select>
-         </div>
+    <div class="row-2">
+        <h2>كل المنتجات</h2>
+        <select onchange="navigateToCategory()">
+            <option>حقائب</option>
+            <option>نضارات</option>
+            <option>جينز</option>
+            <option>ساعات</option>
+        </select>
+    </div>
 
     <div class="row">
-        <div class="col-4">
-            <img src="imgs/ب.png">
-            <h4>جينز اسود واسع</h4>
-            <div class="rating">
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-            </div>
-            <p>35000</p>
-            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-        </div>
-        <div class="col-4">
-            <img src="imgs/ن5.png">
-            <h4>نضارة سوداء</h4>
-            <div class="rating">
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-            </div>
-            <p>35000</p>
-            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-        </div>
-        <div class="col-4">
-            <img src="imgs/س ز-image (3).png" >
-            <h4> ساعة كلاسك</h4>
-            <div class="rating">
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-            </div>
-            <p>35000</p>
-            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-        </div>
-        <div class="col-4">
-            <img src="imgs/ح س-image (4).png">
-            <h4>حقيبة كلاسك</h4>
-            <div class="rating">
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-                <label for="star1">&#9733;</label>
-            </div>
-            <p>35000</p>
-            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <img src="imgs/ح6.png">
-                <h4>حقيبة بلون مميز</h4>
-                <div class="rating">
-                    <label for="star1">&#9733;</label>
-                    <label for="star1">&#9733;</label>
-                    <label for="star1">&#9733;</label>
-                    <label for="star1">&#9733;</label>
-                </div>
-                <p>35000</p>
-                <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-            </div>
-            <div class="col-4">
-                <img src="imgs/ح7.png">
-                <h4>حقيبة رجالي</h4>
-                <div class="rating">
-                    <label for="star1">&#9733;</label>
-                    <label for="star1">&#9733;</label>
-                    <label for="star1">&#9733;</label>
-                    <label for="star1">&#9733;</label>
-                    <label for="star1">&#9733;</label>
-                </div>
-                <p>35000</p>
-                <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-            </div>
-            <div class="col-4">
-                <img src="imgs/ن2.png" >
-                <h4> نضارة بلون مميز</h4>
-                <div class="rating">
-                    <label for="star1">&#9733;</label>
-                    <label for="star1">&#9733;</label>
-                    <label for="star1">&#9733;</label>
-                    <label for="star1">&#9733;</label>
-                    <label for="star1">&#9733;</label>
-                </div>
-                <p>35000</p>
-                <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-            </div>
-            <div class="col-4">
-                <img src="imgs/س رسpng.png">
-                <h4>ساعة رجالي </h4>
-                <div class="rating">
-                    <label for="star1">&#9733;</label>
-                    <label for="star1">&#9733;</label>
-                    <label for="star1">&#9733;</label>
-                    <label for="star1">&#9733;</label>
-                </div>
-                <p>35000</p>
-                <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <img src="imgs/ج4.png">
-                    <h4>حقيبة بلون مميز</h4>
-                    <div class="rating">
-                        <label for="star1">&#9733;</label>
-                        <label for="star1">&#9733;</label>
-                        <label for="star1">&#9733;</label>
-                        <label for="star1">&#9733;</label>
-                    </div>
-                    <p>35000</p>
-                    <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-                </div>
-                <div class="col-4">
-                    <img src="imgs/جينز رجالي اررق.png">
-                    <h4>جينز رجالي ازرق</h4>
-                    <div class="rating">
-                        <label for="star1">&#9733;</label>
-                        <label for="star1">&#9733;</label>
-                        <label for="star1">&#9733;</label>
-                        <label for="star1">&#9733;</label>
-                        <label for="star1">&#9733;</label>
-                    </div>
-                    <p>35000</p>
-                    <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-                </div>
-                <div class="col-4">
-                    <img src="imgs/س2.png" >
-                    <h4> ساعة بلون مميز</h4>
-                    <div class="rating">
-                        <label for="star1">&#9733;</label>
-                        <label for="star1">&#9733;</label>
-                        <label for="star1">&#9733;</label>
-                        <label for="star1">&#9733;</label>
-                        <label for="star1">&#9733;</label>
-                    </div>
-                    <p>35000</p>
-                    <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-                </div>
-                <div class="col-4">
-                    <img src="imgs/ن1.png">
-                    <h4>نضارة مميزة</h4>
-                    <div class="rating">
-                        <label for="star1">&#9733;</label>
-                        <label for="star1">&#9733;</label>
-                        <label for="star1">&#9733;</label>
-                        <label for="star1">&#9733;</label>
-                    </div>
-                    <p>35000</p>
-                    <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-                </div>
-                <div class="row">
-                    <div class="col-4">
-                        <img src="imgs/ساعات.png">
-                        <h4>ساعات مميزة</h4>
-                        <div class="rating">
-                            <label for="star1">&#9733;</label>
-                            <label for="star1">&#9733;</label>
-                            <label for="star1">&#9733;</label>
-                            <label for="star1">&#9733;</label>
-                        </div>
-                        <p>35000</p>
-                        <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-                    </div>
-                    <div class="col-4">
-                        <img src="imgs/ن6.png">
-                        <h4>نضارة طبية</h4>
-                        <div class="rating">
-                            <label for="star1">&#9733;</label>
-                            <label for="star1">&#9733;</label>
-                            <label for="star1">&#9733;</label>
-                            <label for="star1">&#9733;</label>
-                            <label for="star1">&#9733;</label>
-                        </div>
-                        <p>35000</p>
-                        <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-                    </div>
-                    <div class="col-4">
-                        <img src="imgs/س4.png" >
-                        <h4> ساعة</h4>
-                        <div class="rating">
-                            <label for="star1">&#9733;</label>
-                            <label for="star1">&#9733;</label>
-                            <label for="star1">&#9733;</label>
-                            <label for="star1">&#9733;</label>
-                            <label for="star1">&#9733;</label>
-                        </div>
-                        <p>35000</p>
-                        <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-                    </div>
-                    <div class="col-4">
-                        <img src="imgs/حقيبة سوداء .png">
-                        <h4>حقيبة سوداء</h4>
-                        <div class="rating">
-                            <label for="star1">&#9733;</label>
-                            <label for="star1">&#9733;</label>
-                            <label for="star1">&#9733;</label>
-                            <label for="star1">&#9733;</label>
-                        </div>
-                        <p>35000</p>
-                        <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-                    </div>
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="imgs/حقيبة حمراء.png">
-                            <h4>حقيبة بلون مميز</h4>
-                            <div class="rating">
-                                <label for="star1">&#9733;</label>
-                                <label for="star1">&#9733;</label>
-                                <label for="star1">&#9733;</label>
-                                <label for="star1">&#9733;</label>
-                            </div>
-                            <p>35000</p>
-                            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-                        </div>
-                        <div class="col-4">
-                            <img src="imgs/ح8.png">
-                            <h4>حقيبة رجالي</h4>
-                            <div class="rating">
-                                <label for="star1">&#9733;</label>
-                                <label for="star1">&#9733;</label>
-                                <label for="star1">&#9733;</label>
-                                <label for="star1">&#9733;</label>
-                                <label for="star1">&#9733;</label>
-                            </div>
-                            <p>35000</p>
-                            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-                        </div>
-                        <div class="col-4">
-                            <img src="imgs/ح5.png" >
-                            <h4> حقيبة كلاسك</h4>
-                            <div class="rating">
-                                <label for="star1">&#9733;</label>
-                                <label for="star1">&#9733;</label>
-                                <label for="star1">&#9733;</label>
-                                <label for="star1">&#9733;</label>
-                                <label for="star1">&#9733;</label>
-                            </div>
-                            <p>35000</p>
-                            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-                        </div>
-                        <div class="col-4">
-                            <img src="imgs/س5.png">
-                            <h4>ساعة </h4>
-                            <div class="rating">
-                                <label for="star1">&#9733;</label>
-                                <label for="star1">&#9733;</label>
-                                <label for="star1">&#9733;</label>
-                                <label for="star1">&#9733;</label>
-                            </div>
-                            <p>35000</p>
-                            <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-                        </div>
-                        <div class="row">
-                            <div class="col-4">
-                                <img src="imgs/جينز اسود.png">
-                                <h4>جينز اسود</h4>
-                                <div class="rating">
-                                    <label for="star1">&#9733;</label>
-                                    <label for="star1">&#9733;</label>
-                                    <label for="star1">&#9733;</label>
-                                    <label for="star1">&#9733;</label>
-                                </div>
-                                <p>35000</p>
-                                <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-                            </div>
-                            <div class="col-4">
-                                <img src="imgs/س1.png">
-                                <h4>ساعات مميزة</h4>
-                                <div class="rating">
-                                    <label for="star1">&#9733;</label>
-                                    <label for="star1">&#9733;</label>
-                                    <label for="star1">&#9733;</label>
-                                    <label for="star1">&#9733;</label>
-                                    <label for="star1">&#9733;</label>
-                                </div>
-                                <p>35000</p>
-                                <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-                            </div>
-                            <div class="col-4">
-                                <img src="imgs/ن4.png" >
-                                <h4> نضارة </h4>
-                                <div class="rating">
-                                    <label for="star1">&#9733;</label>
-                                    <label for="star1">&#9733;</label>
-                                    <label for="star1">&#9733;</label>
-                                    <label for="star1">&#9733;</label>
-                                    <label for="star1">&#9733;</label>
-                                </div>
-                                <p>35000</p>
-                                <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-                            </div>
-                            <div class="col-4">
-                                <img src="imgs/ح2.png">
-                                <h4>حقيبة قطعتين</h4>
-                                <div class="rating">
-                                    <label for="star1">&#9733;</label>
-                                    <label for="star1">&#9733;</label>
-                                    <label for="star1">&#9733;</label>
-                                    <label for="star1">&#9733;</label>
-                                </div>
-                                <p>35000</p>
-                                <button class="add-to-cart" data-name="جينز اسود واسع" data-price="35000">إضافة إلى السلة</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- منتجاتك هنا -->
+        <!-- تأكد من تصحيح مسارات الصور، النصوص، والأزرار الخاصة بكل منتج -->
     </div>
-    
+</div>
+
 <!-- footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download our app</h3>
-                    <p>Download  app for android and ios mobile phone</p>
-                    <div class="app-logo">
-                        <img src="imgs/apgo.png">
-                        <img src="imgs/gopy.png">
-                    </div>
-                </div>
-                <div class="footer-col-2">
-                    <img src="imgs/paperanimator-image (2).png">
-                    <p>Our goal is to make fun and benefits accessible to everyone in a sustainable manner</p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>use full Links</h3>
-                   <ul>
-                    <li>coupons</li>
-                    <li>blog post</li>
-                    <li>return policy</li>
-                    <li>join affiliate</li>
-                   </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>follow us</h3>
-                   <ul>
-                    <li>facebook</li>
-                    <li>twitter</li>
-                    <li>instagram</li>
-                    <li>youTube</li>
-                   </ul>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download app for android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="imgs/apgo.png">
+                    <img src="imgs/gopy.png">
                 </div>
             </div>
-            <hr>
+            <div class="footer-col-2">
+                <img src="imgs/paperanimator-image (2).png">
+                <p>Our goal is to make fun and benefits accessible to everyone in a sustainable manner</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>use full Links</h3>
+               <ul>
+                <li>coupons</li>
+                <li>blog post</li>
+                <li>return policy</li>
+                <li>join affiliate</li>
+               </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>follow us</h3>
+               <ul>
+                <li>facebook</li>
+                <li>twitter</li>
+                <li>instagram</li>
+                <li>youTube</li>
+               </ul>
+            </div>
         </div>
+        <hr>
     </div>
+</div>
+
+
 
 </body>
 </html>
