@@ -56,8 +56,8 @@
 
 <div class="smal-container">
     <div class="row-2">
-        <h2>كل المنتجات</h2>
-        <select onchange="navigateToCategory()">
+        <h2 class="add">كل المنتجات</h2>
+        <select class="opt" onchange="navigateToCategory()">
             <option>حقائب</option>
             <option>نضارات</option>
             <option>جينز</option>
@@ -66,10 +66,934 @@
     </div>
 
     <div class="row">
-        <!-- منتجاتك هنا -->
-        <!-- تأكد من تصحيح مسارات الصور، النصوص، والأزرار الخاصة بكل منتج -->
     </div>
 </div>
+
+
+<div class="row">
+    <div class="col-4">
+        <img src="imgs/ح6.png">
+        <h4> حقيبة خضراء مميزة</h4>
+        <div class="rating">
+            <label for="star1">&#9733;</label>
+            <label for="star2">&#9733;</label>
+            <label for="star3">&#9733;</label>
+            <label for="star4">&#9733;</label>
+        </div>
+        <p>25000</p>
+        <button class="add-to-cart" data-name="حقيبة خضراء مميزة" data-price="35000">إضافة إلى السلة</button>
+    </div>
+    <div class="col-4">
+        <img src="imgs/ح7.png">
+        <h4>حقيبة رجالي سوداء</h4>
+        <div class="rating">
+            <label for="star1">&#9733;</label>
+            <label for="star2">&#9733;</label>
+            <label for="star3">&#9733;</label>
+            <label for="star4">&#9733;</label>
+            <label for="star5">&#9733;</label>
+        </div>
+        <p>35000</p>
+        <button class="add-to-cart" data-name="حقيبة رجالي" data-price="35000">إضافة إلى السلة</button>
+    </div>
+    <div class="col-4">
+        <img src="imgs/ح1.png">
+        <h4>حقيبة كلاسك سوداء</h4>
+        <div class="rating">
+            <label for="star1">&#9733;</label>
+            <label for="star2">&#9733;</label>
+            <label for="star3">&#9733;</label>
+            <label for="star4">&#9733;</label>
+            <label for="star5">&#9733;</label>
+        </div>
+        <p>25000</p>
+        <button class="add-to-cart" data-name="حقيبة كلاسك سوداء" data-price="25000">إضافة إلى السلة</button>
+    </div>
+    <div class="col-4">
+        <img src="imgs/ح2.png">
+        <h4> حقيبة قطعتين وردية</h4>
+        <div class="rating">
+            <label for="star1">&#9733;</label>
+            <label for="star2">&#9733;</label>
+            <label for="star3">&#9733;</label>
+            <label for="star4">&#9733;</label>
+        </div>
+        <p>40000</p>
+        <button class="add-to-cart" data-name="حقيبة قطعتين وردية" data-price="40000">إضافة إلى السلة</button>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="imgs/ح5.png">
+            <h4>حقيبة ضهر سوداء</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star4">&#9733;</label>
+            </div>
+            <p>25000</p>
+            <button class="add-to-cart" data-name="حقيبة ضهر سوداء" data-price="25000">إضافة إلى السلة</button>
+        </div>
+        <div class="col-4">
+            <img src="imgs/ح8.png">
+            <h4>حقيبة رجالي بنية</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star4">&#9733;</label>
+                <label for="star5">&#9733;</label>
+            </div>
+            <p>20000</p>
+            <button class="add-to-cart" data-name=" حقيبة رجالي بنية " data-price="20000">إضافة إلى السلة</button>
+        </div>
+        <div class="col-4">
+            <img src="imgs/حقيبة حمراء.png">
+            <h4>حقيبة حمراء</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star4">&#9733;</label>
+                <label for="star5">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="  حقيبة حمراء" data-price="35000">إضافة إلى السلة</button>
+        </div>
+        <div class="col-4">
+            <img src="imgs/حقيبة سوداء .png">
+            <h4>حقيبة سوداء</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star4">&#9733;</label>
+            </div>
+            <p>25000</p>
+            <button class="add-to-cart" data-name=" حقيبة سوداء" data-price="25000">إضافة إلى السلة</button>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="imgs/ح11.png">
+                <h4>حقيبة سوداء كلاسك</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="حقيبة سوداء كلاسك" data-price="35000">إضافة إلى السلة</button>
+            </div>
+            <div class="col-4">
+                <img src="imgs/ح12.png">
+                <h4>حقيبة مميزة </h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                    <label for="star5">&#9733;</label>
+                </div>
+                <p>20000</p>
+                <button class="add-to-cart" data-name="حقيبة مميزة" data-price="20000">إضافة إلى السلة</button>
+            </div>
+            <div class="col-4">
+                <img src="imgs/ح13.png">
+                <h4>حقيبة بلون ازرق غامق</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                    <label for="star5">&#9733;</label>
+                </div>
+                <p>20000</p>
+                <button class="add-to-cart" data-name=" حقيبة بلون ازرق غامق " data-price="20000">إضافة إلى السلة</button>
+            </div>
+            <div class="col-4">
+                <img src="imgs/ح14.png">
+                <h4>حقيبة ملونة </h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                </div>
+                <p>30000</p>
+                <button class="add-to-cart" data-name=" حقيبة ملونة" data-price="30000">إضافة إلى السلة</button>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="imgs/ح18.png">
+                    <h4>حقيبة  بلون وردي مميز</h4>
+                    <div class="rating">
+                        <label for="star1">&#9733;</label>
+                        <label for="star2">&#9733;</label>
+                        <label for="star3">&#9733;</label>
+                        <label for="star4">&#9733;</label>
+                    </div>
+                    <p>15000</p>
+                    <button class="add-to-cart" data-name="حقيبة بلون وردي مميز" data-price="15000">إضافة إلى السلة</button>
+                </div>
+                <div class="col-4">
+                    <img src="imgs/ح17.png">
+                    <h4>حقيبة ذات تصميم مميز</h4>
+                    <div class="rating">
+                        <label for="star1">&#9733;</label>
+                        <label for="star2">&#9733;</label>
+                        <label for="star3">&#9733;</label>
+                        <label for="star4">&#9733;</label>
+                        <label for="star5">&#9733;</label>
+                    </div>
+                    <p>35000</p>
+                    <button class="add-to-cart" data-name="حقيبة ذات تصميم مميز" data-price="35000">إضافة إلى السلة</button>
+                </div>
+                <div class="col-4">
+                    <img src="imgs/ح 15.png">
+                    <h4>حقيبة بلون اخضر فاتح</h4>
+                    <div class="rating">
+                        <label for="star1">&#9733;</label>
+                        <label for="star2">&#9733;</label>
+                        <label for="star3">&#9733;</label>
+                        <label for="star4">&#9733;</label>
+                        <label for="star5">&#9733;</label>
+                    </div>
+                    <p>15000</p>
+                    <button class="add-to-cart" data-name=" حقيبة بلون اخضر فاتح " data-price="15000">إضافة إلى السلة</button>
+                </div>
+                <div class="col-4">
+                    <img src="imgs/ح16.png">
+                    <h4>حقيبة سوداء مميزة</h4>
+                    <div class="rating">
+                        <label for="star1">&#9733;</label>
+                        <label for="star2">&#9733;</label>
+                        <label for="star3">&#9733;</label>
+                        <label for="star4">&#9733;</label>
+                    </div>
+                    <p>45000</p>
+                    <button class="add-to-cart" data-name=" حقيبة سوداء مميزة " data-price="45000">إضافة إلى السلة</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+    <div class="col-4">
+        <img src="imgs/نضارات.png">
+        <h4>  نضارة مميزة</h4>
+        <div class="rating">
+            <label for="star1">&#9733;</label>
+            <label for="star2">&#9733;</label>
+            <label for="star3">&#9733;</label>
+            <label for="star4">&#9733;</label>
+        </div>
+        <p>35000</p>
+        <button class="add-to-cart" data-name="  نضارة مميزة" data-price="35000">إضافة إلى السلة</button>
+        
+    </div>
+    <div class="col-4">
+        <img src="imgs/ن1.png">
+        <h4> نضارة مميزة</h4>
+        <div class="rating">
+            <label for="star1">&#9733;</label>
+            <label for="star2">&#9733;</label>
+            <label for="star3">&#9733;</label>
+            <label for="star4">&#9733;</label>
+            <label for="star5">&#9733;</label>
+        </div>
+        <p>35000</p>
+        <button class="add-to-cart" data-name="نضارة مميزة" data-price="35000">إضافة إلى السلة</button>
+    </div>
+    <div class="col-4">
+        <img src="imgs/ن2.png">
+        <h4>نضارة مميزة</h4>
+        <div class="rating">
+            <label for="star1">&#9733;</label>
+            <label for="star2">&#9733;</label>
+            <label for="star3">&#9733;</label>
+            <label for="star4">&#9733;</label>
+            <label for="star5">&#9733;</label>
+        </div>
+        <p>35000</p>
+        <button class="add-to-cart" data-name="نضارة بلون مميز" data-price="35000">إضافة إلى السلة</button>
+    </div>
+    <div class="col-4">
+        <img src="imgs/ن3.png">
+        <h4>نضارة مميزة</h4>
+        <div class="rating">
+            <label for="star1">&#9733;</label>
+            <label for="star2">&#9733;</label>
+            <label for="star3">&#9733;</label>
+            <label for="star4">&#9733;</label>
+        </div>
+        <p>35000</p>
+        <button class="add-to-cart" data-name="نضارة مميزة" data-price="35000">إضافة إلى السلة</button>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="imgs/ن4.png">
+            <h4>نضارة بلون مميز</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star4">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="نضارة بلون مميز" data-price="35000">إضافة إلى السلة</button>
+        </div>
+        <div class="col-4">
+            <img src="imgs/ن5.png">
+            <h4>نضارة مميزة</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star4">&#9733;</label>
+                <label for="star5">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="نضارة مميزة" data-price="35000">إضافة إلى السلة</button>
+        </div>
+        <div class="col-4">
+            <img src="imgs/ن6.png">
+            <h4>نضارة بلون مميز</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star4">&#9733;</label>
+                <label for="star5">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="نضارة بلون مميز" data-price="35000">إضافة إلى السلة</button>
+        </div>
+        <div class="col-4">
+            <img src="imgs/ن10.png">
+            <h4>نضارة مميزة</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star4">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="نضارة مميزة" data-price="35000">إضافة إلى السلة</button>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="imgs/ن11.png">
+                <h4>نضارة بلون مميز</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="نضارة بلون مميز" data-price="35000">إضافة إلى السلة</button>
+            </div>
+            <div class="col-4">
+                <img src="imgs/ن12.png">
+                <h4>نضارة مميزة</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                    <label for="star5">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="نضارة مميزة" data-price="35000">إضافة إلى السلة</button>
+            </div>
+            <div class="col-4">
+                <img src="imgs/ن13.png">
+                <h4>نضارة بلون مميز</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                    <label for="star5">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="نضارة بلون مميز" data-price="35000">إضافة إلى السلة</button>
+            </div>
+            <div class="col-4">
+                <img src="imgs/ن14.png">
+                <h4>نضارة مميزة</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="نضارة مميزة" data-price="35000">إضافة إلى السلة</button>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="imgs/ن15.png">
+                    <h4>نضارة بلون مميز</h4>
+                    <div class="rating">
+                        <label for="star1">&#9733;</label>
+                        <label for="star2">&#9733;</label>
+                        <label for="star3">&#9733;</label>
+                        <label for="star4">&#9733;</label>
+                    </div>
+                    <p>35000</p>
+                    <button class="add-to-cart" data-name="نضارة بلون مميز" data-price="35000">إضافة إلى السلة</button>
+                </div>
+                <div class="col-4">
+                    <img src="imgs/ن16.png">
+                    <h4>نضارة مميزة</h4>
+                    <div class="rating">
+                        <label for="star1">&#9733;</label>
+                        <label for="star2">&#9733;</label>
+                        <label for="star3">&#9733;</label>
+                        <label for="star4">&#9733;</label>
+                        <label for="star5">&#9733;</label>
+                    </div>
+                    <p>35000</p>
+                    <button class="add-to-cart" data-name="نضارة مميزة" data-price="35000">إضافة إلى السلة</button>
+                </div>
+                <div class="col-4">
+                    <img src="imgs/ن17.png">
+                    <h4>نضارة بلون مميز</h4>
+                    <div class="rating">
+                        <label for="star1">&#9733;</label>
+                        <label for="star2">&#9733;</label>
+                        <label for="star3">&#9733;</label>
+                        <label for="star4">&#9733;</label>
+                        <label for="star5">&#9733;</label>
+                    </div>
+                    <p>35000</p>
+                    <button class="add-to-cart" data-name="نضارة بلون مميز" data-price="35000">إضافة إلى السلة</button>
+                </div>
+                <div class="col-4">
+                    <img src="imgs/ن18.png">
+                    <h4>نضارة مميزة</h4>
+                    <div class="rating">
+                        <label for="star1">&#9733;</label>
+                        <label for="star2">&#9733;</label>
+                        <label for="star3">&#9733;</label>
+                        <label for="star4">&#9733;</label>
+                    </div>
+                    <p>35000</p>
+                    <button class="add-to-cart" data-name="نضارة مميزة" data-price="35000">إضافة إلى السلة</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+    <div class="col-4">
+        <img src="imgs/جينز اسود.png">
+        <h4>جينز اسود مميز</h4>
+        <div class="rating">
+            <label for="star1">&#9733;</label>
+            <label for="star2">&#9733;</label>
+            <label for="star3">&#9733;</label>
+            <label for="star4">&#9733;</label>
+        </div>
+        <p>35000</p>
+        <button class="add-to-cart" data-name="جينز اسود مميز" data-price="35000">إضافة إلى السلة</button>
+    </div>
+    <div class="col-4">
+        <img src="imgs/جينز رجالي اررق.png">
+        <h4>جينز رجالي</h4>
+        <div class="rating">
+            <label for="star1">&#9733;</label>
+            <label for="star2">&#9733;</label>
+            <label for="star3">&#9733;</label>
+            <label for="star4">&#9733;</label>
+            <label for="star5">&#9733;</label>
+        </div>
+        <p>35000</p>
+        <button class="add-to-cart" data-name="جينز رجالي" data-price="35000">إضافة إلى السلة</button>
+    </div>
+    <div class="col-4">
+        <img src="imgs/جينز واسع.png">
+        <h4>جينز كلاسك</h4>
+        <div class="rating">
+            <label for="star1">&#9733;</label>
+            <label for="star2">&#9733;</label>
+            <label for="star3">&#9733;</label>
+            <label for="star4">&#9733;</label>
+            <label for="star5">&#9733;</label>
+        </div>
+        <p>35000</p>
+        <button class="add-to-cart" data-name="جينز بلون مميز" data-price="35000">إضافة إلى السلة</button>
+    </div>
+    <div class="col-4">
+        <img src="imgs/ب.png">
+        <h4>جينز رجالي</h4>
+        <div class="rating">
+            <label for="star1">&#9733;</label>
+            <label for="star2">&#9733;</label>
+            <label for="star3">&#9733;</label>
+            <label for="star4">&#9733;</label>
+        </div>
+        <p>35000</p>
+        <button class="add-to-cart" data-name="جينز رجالي" data-price="35000">إضافة إلى السلة</button>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="imgs/ج10.png">
+            <h4>جينز بلون مميز</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star4">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="جينز بلون مميز" data-price="35000">إضافة إلى السلة</button>
+        </div>
+        <div class="col-4">
+            <img src="imgs/ج11.png">
+            <h4> جينز</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star4">&#9733;</label>
+                <label for="star5">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="جينز " data-price="35000">إضافة إلى السلة</button>
+        </div>
+        <div class="col-4">
+            <img src="imgs/ج12.png">
+            <h4>جينز بلون مميز</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star4">&#9733;</label>
+                <label for="star5">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="جينز بلون مميز" data-price="35000">إضافة إلى السلة</button>
+        </div>
+        <div class="col-4">
+            <img src="imgs/ج13.png">
+            <h4>جينز نسائي</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star4">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="جينز نسائي" data-price="35000">إضافة إلى السلة</button>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="imgs/ج14.png">
+                <h4>جينز بلون مميز</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="جينز بلون مميز" data-price="35000">إضافة إلى السلة</button>
+            </div>
+            <div class="col-4">
+                <img src="imgs/ج15.png">
+                <h4>جينز ولادي</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                    <label for="star5">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="جينز ولادي" data-price="35000">إضافة إلى السلة</button>
+            </div>
+            <div class="col-4">
+                <img src="imgs/ج16.png">
+                <h4>جينز بلون مميز</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                    <label for="star5">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="جينز بلون مميز" data-price="35000">إضافة إلى السلة</button>
+            </div>
+            <div class="col-4">
+                <img src="imgs/ج17.png">
+                <h4>جينز رجالي</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="جينز رجالي" data-price="35000">إضافة إلى السلة</button>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="imgs/ج18.png">
+                    <h4>جينز بلون مميز</h4>
+                    <div class="rating">
+                        <label for="star1">&#9733;</label>
+                        <label for="star2">&#9733;</label>
+                        <label for="star3">&#9733;</label>
+                        <label for="star4">&#9733;</label>
+                    </div>
+                    <p>35000</p>
+                    <button class="add-to-cart" data-name="جينز بلون مميز" data-price="35000">إضافة إلى السلة</button>
+                </div>
+                <div class="col-4">
+                    <img src="imgs/ج20.png">
+                    <h4>جينز </h4>
+                    <div class="rating">
+                        <label for="star1">&#9733;</label>
+                        <label for="star2">&#9733;</label>
+                        <label for="star3">&#9733;</label>
+                        <label for="star4">&#9733;</label>
+                        <label for="star5">&#9733;</label>
+                    </div>
+                    <p>35000</p>
+                    <button class="add-to-cart" data-name="جينز " data-price="35000">إضافة إلى السلة</button>
+                </div>
+                <div class="col-4">
+                    <img src="imgs/ج21.png">
+                    <h4>جينز بلون مميز</h4>
+                    <div class="rating">
+                        <label for="star1">&#9733;</label>
+                        <label for="star2">&#9733;</label>
+                        <label for="star3">&#9733;</label>
+                        <label for="star4">&#9733;</label>
+                        <label for="star5">&#9733;</label>
+                    </div>
+                    <p>35000</p>
+                    <button class="add-to-cart" data-name="جينز بلون مميز" data-price="35000">إضافة إلى السلة</button>
+                </div>
+                <div class="col-4">
+                    <img src="imgs/ج22.png">
+                    <h4>جينز نسائي</h4>
+                    <div class="rating">
+                        <label for="star1">&#9733;</label>
+                        <label for="star2">&#9733;</label>
+                        <label for="star3">&#9733;</label>
+                        <label for="star4">&#9733;</label>
+                    </div>
+                    <p>35000</p>
+                    <button class="add-to-cart" data-name="جينز نسائي" data-price="35000">إضافة إلى السلة</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+    <div class="col-4">
+        <img src="imgs/س18.png">
+        <h4>ساعة بلون مميز</h4>
+        <div class="rating">
+            <label for="star1">&#9733;</label>
+            <label for="star2">&#9733;</label>
+            <label for="star3">&#9733;</label>
+            <label for="star4">&#9733;</label>
+        </div>
+        <p>35000</p>
+        <button class="add-to-cart" data-name="ساعة بلون مميز" data-price="35000">إضافة إلى السلة</button>
+    </div>
+    <div class="col-4">
+        <img src="imgs/س17.png">
+        <h4>ساعة </h4>
+        <div class="rating">
+            <label for="star1">&#9733;</label>
+            <label for="star2">&#9733;</label>
+            <label for="star3">&#9733;</label>
+            <label for="star4">&#9733;</label>
+            <label for="star5">&#9733;</label>
+        </div>
+        <p>35000</p>
+        <button class="add-to-cart" data-name=" ساعة" data-price="35000">إضافة إلى السلة</button>
+    </div>
+    <div class="col-4">
+        <img src="imgs/ساعات.png">
+        <h4>ساعة كلاسك</h4>
+        <div class="rating">
+            <label for="star1">&#9733;</label>
+            <label for="star2">&#9733;</label>
+            <label for="star3">&#9733;</label>
+            <label for="star4">&#9733;</label>
+            <label for="star5">&#9733;</label>
+        </div>
+        <p>35000</p>
+        <button class="add-to-cart" data-name="ساعة بلون مميز" data-price="35000">إضافة إلى السلة</button>
+    </div>
+    <div class="col-4">
+        <img src="imgs/س1.png">
+        <h4>ساعة </h4>
+        <div class="rating">
+            <label for="star1">&#9733;</label>
+            <label for="star2">&#9733;</label>
+            <label for="star3">&#9733;</label>
+            <label for="star4">&#9733;</label>
+        </div>
+        <p>35000</p>
+        <button class="add-to-cart" data-name="ساعة " data-price="35000">إضافة إلى السلة</button>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="imgs/س2.png">
+            <h4>ساعة بلون مميز</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star4">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="ساعة بلون مميز" data-price="35000">إضافة إلى السلة</button>
+        </div>
+        <div class="col-4">
+            <img src="imgs/س3.png">
+            <h4>ساعة مميزة</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star4">&#9733;</label>
+                <label for="star5">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="ساعة مميزة" data-price="35000">إضافة إلى السلة</button>
+        </div>
+        <div class="col-4">
+            <img src="imgs/س4.png">
+            <h4>ساعة بلون مميز</h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star4">&#9733;</label>
+                <label for="star5">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="ساعة بلون مميز" data-price="35000">إضافة إلى السلة</button>
+        </div>
+        <div class="col-4">
+            <img src="imgs/س5.png">
+            <h4>ساعة </h4>
+            <div class="rating">
+                <label for="star1">&#9733;</label>
+                <label for="star2">&#9733;</label>
+                <label for="star3">&#9733;</label>
+                <label for="star4">&#9733;</label>
+            </div>
+            <p>35000</p>
+            <button class="add-to-cart" data-name="ساعة " data-price="35000">إضافة إلى السلة</button>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="imgs/س رسpng.png">
+                <h4>ساعة بلون مميز</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="ساعة بلون مميز" data-price="35000">إضافة إلى السلة</button>
+            </div>
+            <div class="col-4">
+                <img src="imgs/س ز-image (3).png">
+                <h4>ساعة بلون مميزة</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                    <label for="star5">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="ساعة بلون مميز" data-price="35000">إضافة إلى السلة</button>
+            </div>
+            <div class="col-4">
+                <img src="imgs/س11.png">
+                <h4>ساعة بلون مميز</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                    <label for="star5">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="ساعة بلون مميز" data-price="35000">إضافة إلى السلة</button>
+            </div>
+            <div class="col-4">
+                <img src="imgs/س12.png">
+                <h4>ساعة مميز</h4>
+                <div class="rating">
+                    <label for="star1">&#9733;</label>
+                    <label for="star2">&#9733;</label>
+                    <label for="star3">&#9733;</label>
+                    <label for="star4">&#9733;</label>
+                </div>
+                <p>35000</p>
+                <button class="add-to-cart" data-name="ساعة مميزة" data-price="35000">إضافة إلى السلة</button>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="imgs/س13.png">
+                    <h4>ساعة بلون مميز</h4>
+                    <div class="rating">
+                        <label for="star1">&#9733;</label>
+                        <label for="star2">&#9733;</label>
+                        <label for="star3">&#9733;</label>
+                        <label for="star4">&#9733;</label>
+                    </div>
+                    <p>35000</p>
+                    <button class="add-to-cart" data-name="ساعة بلون مميز" data-price="35000">إضافة إلى السلة</button>
+                </div>
+                <div class="col-4">
+                    <img src="imgs/س14.png">
+                    <h4>ساعة سوداء مميزة</h4>
+                    <div class="rating">
+                        <label for="star1">&#9733;</label>
+                        <label for="star2">&#9733;</label>
+                        <label for="star3">&#9733;</label>
+                        <label for="star4">&#9733;</label>
+                        <label for="star5">&#9733;</label>
+                    </div>
+                    <p>35000</p>
+                    <button class="add-to-cart" data-name="ساعة سوداء مميزة" data-price="35000">إضافة إلى السلة</button>
+                </div>
+                <div class="col-4">
+                    <img src="imgs/س15.png">
+                    <h4>ساعة بلون مميز</h4>
+                    <div class="rating">
+                        <label for="star1">&#9733;</label>
+                        <label for="star2">&#9733;</label>
+                        <label for="star3">&#9733;</label>
+                        <label for="star4">&#9733;</label>
+                        <label for="star5">&#9733;</label>
+                    </div>
+                    <p>35000</p>
+                    <button class="add-to-cart" data-name="ساعة بلون مميز" data-price="35000">إضافة إلى السلة</button>
+                </div>
+                <div class="col-4">
+                    <img src="imgs/س16.png">
+                    <h4>ساعة نسائي</h4>
+                    <div class="rating">
+                        <label for="star1">&#9733;</label>
+                        <label for="star2">&#9733;</label>
+                        <label for="star3">&#9733;</label>
+                        <label for="star4">&#9733;</label>
+                    </div>
+                    <p>35000</p>
+                    <button class="add-to-cart" data-name="ساعة نسائي" data-price="35000">إضافة إلى السلة</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
 
 <!-- footer -->
 <div class="footer">
@@ -110,7 +1034,8 @@
     </div>
 </div>
 
-
+<script src="test.js"></script>
+<script src="cart.html"></script>
 
 </body>
 </html>

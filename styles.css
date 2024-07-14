@@ -376,7 +376,33 @@ h1, h3, h4 {
 
 
 
+.smal-container .add{
+    text-align: center; 
+    box-shadow: 10px 10px 20px #babecc, -10px -10px 20px #ffffff;
+}
 
-
-
-
+.bag{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+.glasses{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+.jeans{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+.wat{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+.opt{
+    font-size: 1em;
+    padding: 10px;
+    float: right;
+}
