@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales</title>
+    <link rel="stylesheet" href="PaStyle.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="con" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+  
+    <div class="sidebar">
+        <header>My Drop List</header>
+        <ul>
+            <li><a href="home-page.html"><i class="fas fa-qrcode"></i> Home Page</a></li>
+            <li><a href="Inventory.html"><i class="fas fa-qrcode"></i> Inventory</a></li>
+            <li><a href="Sales.html"><i class="fas fa-qrcode"></i> Sales</a></li>
+            <li><a href="My Account.html"><i class="fas fa-qrcode"></i> My Account</a></li>
+            <li><a href="#" onclick="logout()"><i class="fas fa-qrcode"></i> Log Out</a></li>
+        </ul>
+    </div>
+  
+    <script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+        document.querySelector(".sidebar").classList.toggle("active");
+    }
+
+    function logout() {
+        // توجيه المستخدم إلى صفحة تسجيل الدخول
+        window.location.href = 'panda.html';
+    }
+    </script>
+</body>
+</html>
